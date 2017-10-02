@@ -13,9 +13,4 @@ export class AppComponent {
     const numero = Math.round(Math.random() * 100);
     this.nome = 'Paulo ' + numero;
   }
-  
-  alterarNome(event: any){
-    // console.log(event);
-    this.nome = event.target.value;
-  }
 }
