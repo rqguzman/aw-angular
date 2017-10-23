@@ -15,4 +15,10 @@ export class FuncionarioCardComponent {
   
   @Input() funcionarioRecebido: any;
 
+  getEstilosCartao(){
+    return {
+      'border-width.px': this.funcionarioRecebido.id ,
+      'background-color': this.funcionarioRecebido.id % 2 === 0 ? 'lightblue' : 'lightgreen'
+    };
+  }
 }
